@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins&family=Roboto:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #86A789;
+  overflow-x: hidden;
+}
+body .transition-wrapper {
+  position: fixed;
+  top: 100%;
+  z-index: 10;
+}
+body .transition-wrapper span {
+  margin-top: 25px;
+  position: fixed;
+  top: 100%;
+  transform: translateY(-100%);
+  z-index: 10;
+  width: 100vw;
+  height: 15vh;
+  background-color: #B2C8BA;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+nav .nav-container {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  height: 10vh;
+  overflow: hidden;
+}
+nav .nav-container ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 50%;
+}
+nav .nav-container a {
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+  color: #EBF3E8;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+nav .nav-container .title a {
+  font-size: 3rem;
+}
+
+.first-vh .container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.first-vh .container .hero .word {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  font-family: "blue ocean";
+  color: #86A789;
+  -webkit-text-stroke: 1px #EBF3E8;
+}
+.first-vh .container .hero img {
+  width: clamp(100px, 30%, 400px); /* Adjust the min, preferred, and max values */
+  height: clamp(300px, 50%, 700px); /* Adjust the min, preferred, and max values */
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.first-vh .container .hero img .left {
+  position: absolute;
+  transform: rotate(10deg);
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  margin-right: 500px;
+}
+.first-vh .container .hero img .right {
+  scale: 1;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
+.first-vh .container .hero .hero-img {
+  overflow: hidden;
+}
+.first-vh .container .hero .hero-img .main-img {
+  width: clamp(500px, 30%, 900px); /* Adjust the min, preferred, and max values */
+  height: clamp(800px, 50%, 1400px);
+}
+.first-vh .container .hero .hero-img .box {
+  width: clamp(700px, 30%, 900px); /* Adjust the min, preferred, and max values */
+  height: clamp(1100px, 50%, 1400px); /* Adjust the min, preferred, and max values */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #86A789;
+  overflow: hidden;
+}
+.first-vh .container aside {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  transform: translate(-25%, -85%);
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
+}
+.first-vh .container aside h1 {
+  -webkit-text-stroke: 1px #86A789;
+  color: transparent;
+}
+.first-vh .container .projects {
+  position: absolute;
+  top: 90%;
+  left: 12%;
+  transform: translate(-90%, -12%);
+  font-size: 1.4rem;
+  font-family: "Anton", sans-serif;
+  opacity: 0.8;
+  color: #86A789;
+}/*# sourceMappingURL=styless.css.map */

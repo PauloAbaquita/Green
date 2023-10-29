@@ -1,0 +1,87 @@
+$primaryfont:'Anton', sans-serif;
+$secondaryfont: 'blue ocean';
+$poppins: 'Poppins', sans-serif;
+
+$primarycolor: #86A789;
+$secondarycolor:#B2C8BA;
+$thirdcolor:#D2E3C8;
+$fontcolor:#EBF3E8;
+
+.third-vh{
+    position: relative;
+    width: 100vw;
+    height: 110vh;
+    background-color: $primarycolor;
+    overflow: hidden;
+    .third-vh-wrapper{
+        .big-right{
+            width: 100%;
+            display: flex;
+            justify-content:start;
+            align-items: center;
+            .big-right-overlay{
+                width: 100%;
+                height: 20%;
+                position: absolute;
+                overflow: hidden;
+                background-color: $primarycolor;
+            }
+            h1{
+                font-size: 7rem;
+                font-family: $secondaryfont;
+                color: $fontcolor;
+            }
+            img{
+                width: clamp(50px, 70%, 160px);
+                height: clamp(40px, 70%, 130px);
+                margin-left: 5%;
+            }
+        }
+        .third-pic{
+            display: flex;
+            justify-content: center;
+            z-index: 15;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 90%;
+                height: 60vh;
+                object-fit: cover;
+                border-radius: 20px;
+                z-index: 1;
+            }
+            .third-pic-overlay{
+                width: 100%;
+                height: 340%;
+                background-color:$primarycolor;
+                position: absolute;
+                scale: 2;
+                z-index: 1;
+                top: 50%;
+                left: 90%;
+                transform: translate(-50%,-50%);
+                clip-path: circle(50% at 50% 50%);
+                overflow: auto;
+            }
+        }
+        .third-big-down{
+            height: 100%;
+            
+            .third-big-down-wrapper{
+                display: flex;
+                justify-content: space-around;
+                align-items: end;
+                .big-down-word{
+                    font-size: 7rem;
+                    font-family: $secondaryfont;
+                    color: $fontcolor;
+                    display: flex;
+                }
+                img{
+                    margin-bottom: 40px;
+                }
+              
+            }
+        }
+    }
+}

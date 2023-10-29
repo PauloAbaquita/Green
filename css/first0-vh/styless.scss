@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins&family=Roboto:wght@900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$primaryfont:'Anton', sans-serif;
+$secondaryfont: 'blue ocean';
+$poppins: 'Poppins', sans-serif;
+
+$primarycolor: #86A789;
+$secondarycolor:#B2C8BA;
+$thirdcolor:#D2E3C8;
+$fontcolor:#EBF3E8;
+body{
+    background-color: $primarycolor;
+    overflow-x: hidden;
+    .transition-wrapper{
+        position: fixed;
+        top: 100%;
+        z-index: 10;
+        span{
+            margin-top: 25px;
+            position: fixed;
+            top: 100%;
+            transform: translateY(-100%);
+            z-index: 10;
+            width: 100vw;   
+            height: 15vh;
+            background-color:$secondarycolor;
+        }
+    }
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    
+    z-index: 2;
+    .nav-container{
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        height: 10vh;
+        overflow: hidden;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            width: 50%;
+        }
+        a{
+            font-family:$primaryfont;
+            text-decoration: none;
+            color: $fontcolor;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+        }
+        .title a{
+            font-size: 3rem;
+            
+        }
+    }
+}
+.first-vh{
+    .container{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        .hero{  
+            
+            .word{
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 6rem;
+                font-family: $secondaryfont;
+                color: $primarycolor;
+                -webkit-text-stroke: 1px $fontcolor;
+
+            }
+            img {
+                width: clamp(100px, 30%, 400px); /* Adjust the min, preferred, and max values */
+                height: clamp(300px, 50%, 700px); /* Adjust the min, preferred, and max values */
+                position: absolute;
+                object-fit: contain;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+                .left{
+                    position: absolute;
+                    transform: rotate(10deg);
+                    top: 30%;
+                    left: 60%;
+                    transform: translate(-50%,-50%);
+                    opacity: .7;
+                    margin-right: 500px;
+                }
+                .right{
+                    scale: 1;
+                    position: absolute;
+                    transform: rotate(-10deg);
+                    top: 30%;
+                    left: 25%;
+                    transform: translate(-50%,-50%);
+
+                    opacity: .7;
+                }
+            }
+            .hero-img{
+                overflow: hidden;
+
+                .main-img{
+                    width: clamp(500px, 30%, 900px); /* Adjust the min, preferred, and max values */
+                    height: clamp(800px, 50%, 1400px);
+                }
+                .box{
+                    width: clamp(700px, 30%, 900px); /* Adjust the min, preferred, and max values */
+                    height: clamp(1100px, 50%, 1400px); /* Adjust the min, preferred, and max values */
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background-color:$primarycolor;
+                    overflow: hidden;
+                }
+            }
+        }
+        aside{
+            position: absolute;
+            top: 25%;
+            left: 85%;
+            transform: translate(-25%,-85%);
+            font-size: 3rem;
+            font-family: $primaryfont;
+            h1{
+                -webkit-text-stroke: 1px $primarycolor;
+                color: transparent;
+            }
+        }
+        .projects{
+            position: absolute;
+            top: 90%;
+            left: 12%;
+            transform: translate(-90%,-12%);
+            font-size: 1.4rem;
+            font-family: $primaryfont;
+            opacity: .8;
+            color: $primarycolor;
+        }
+    }
+}
