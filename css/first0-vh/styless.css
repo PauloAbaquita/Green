@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "blue ocean";
-  src: url("./css/fonts/BLUE OCEAN.ttf") format("truetype");
+  src: url("../fonts/BLUE OCEAN.ttf") format("truetype");
 }
 body {
   background-color: #86A789;

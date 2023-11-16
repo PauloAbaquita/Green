@@ -13,10 +13,12 @@ $primarycolor: #86A789;
 $secondarycolor:#B2C8BA;
 $thirdcolor:#D2E3C8;
 $fontcolor:#EBF3E8;
+
+
 @font-face {
     font-family: $secondaryfont;
-    src: url('./css/fonts/BLUE OCEAN.ttf') format('truetype');
-  }
+    src: url("../fonts/BLUE\ OCEAN.ttf") format('truetype');
+}
 body{
     background-color: $primarycolor;
     overflow-x: hidden;
